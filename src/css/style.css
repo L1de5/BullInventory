@@ -1,0 +1,114 @@
+body {
+    background-image: url("../images/bg.jpg");
+    
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-size: cover;
+} 
+.bg-formlogin{
+    background-color: #482C1E;
+
+    text-align: center;
+
+    
+    padding: 0;
+
+	  border-radius: 10px 20px;
+  }
+  
+#login{
+  background-color: #F5E6DD;
+  color: #482C1E;
+  font-weight: bolder
+}
+
+label{
+  color: #F5E6DD;
+}
+
+#table {
+  padding: 2%;
+  border-radius: 4% 4%;
+
+  color: #F5E6DD !important;
+  background-color: #482C1E;
+
+}
+th,td{
+  
+  color: #482C1E !important;
+  border-color:#482C1E !important;
+}
+table{
+  
+  border-radius: 4% 4%;
+  color: #482C1E;
+  border-color:#482C1E !important;
+  background-color: #F5E6DD;
+}
+
+
+.buttons-main{
+  height: 100%;
+  width: 100%;
+  color:#482C1E !important;
+  border-color: #482C1E;
+  background-color: #F5E6DD !important;
+}
+.buttons-add{
+  color:#482C1E !important;
+  border-color: #482C1E !important;
+  background-color: #F5E6DD !important;
+}
+.button-main:hover {
+  background-color: #c2ac9e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.cadastro-produtores{
+  text-align: right;
+
+}
+#tela-inicial{
+  padding: 3%;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}

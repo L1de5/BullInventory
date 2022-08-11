@@ -1,0 +1,42 @@
+<div class="container mt-3 col-s-12" id="table">
+    <form action="/">
+        <button type="submit" class="btn btn-block buttons-transparent"><img src="/static/images/back-arrow.png"></button>
+    </form>
+    <h2>GADO</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>Numero</th>
+            <th>Nascimento</th>
+            <th>Pelagem</th>
+            <th>Potreiro</th>
+            <th>Dono</th>
+            <th></th>
+            <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each produtores}}
+                <tr>
+                <td>{{Gado.numero}}</td>
+                <td>{{Gado.nascimento}}</td>
+                <td>{{Gado.pelagem}}</td>
+                <td>{{Gado.potreiro}}</td>
+                <td>{{marca}}</td>
+                <td style="text-align: right; width: 5%;">
+                    <form action="/update/{{Gado.id}}" method="GET">
+                        <button type="submit" class="btn btn-info btn-sm"><img src="/static/images/edit.png"></button>
+                    </form>
+                </td>
+                <td style="text-align: right; width: 5%;">
+                    <form action="/delete/{{Gado.id}}" method="GET">
+                        <button type="submit" class="btn btn-danger btn-sm"><img src="/static/images/delete.png"></button>
+                    </form></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <form action="/cadastro-gado" class="cadastro-produtores">
+        <button type="submit" class="btn btn-block btn-sm buttons-add">Adicionar Gado</button>
+    </form>
+</div>

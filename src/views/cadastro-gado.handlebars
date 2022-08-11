@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-center">
+    <form action="/cadas-gado" id="tela-inicial" class="bg-formlogin" method="POST">
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example1">Número do brinco:</label>
+            <input type="number" name="numero" class="form-control" />
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label " for="form2Example2">Data de Nascimento:</label>
+            <input type="date" format="2" name="nascimento" class="form-control" />
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label " for="form2Example2">Pelagem:</label>
+            <input type="text" name="pelagem" class="form-control" />
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label " for="form2Example2">Potreiro:</label>
+            <input type="text" name="potreiro" class="form-control" />
+        </div>
+        <div class="form-outline mb-4">
+            <select name="produtor" class="form-select" aria-label="Default select example">
+                <option selected>Escolha um Produtor</option>
+                {{#each produtores}}
+                <option value="{{id}}">{{nome}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="row mb-1">
+            <button type="submit"  id="login" class="btn btn-login btn-block mb-4">Cadastrar</button>
+        </div>  
+    </form>
+</div>  

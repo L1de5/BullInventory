@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-center">
+    {{#each produtores}}
+    <form action="/update-produtor/{{id}}" id="tela-inicial" class="bg-formlogin" method="POST">
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example1">Nome do Produtor:</label>
+            <input type="text" name="nome" class="form-control" value="{{nome}}" />
+        </div>
+        <div class="form-outline mb-4">
+            <label class="form-label " for="form2Example2">Marca:</label>
+            <input type="text" name="marca" class="form-control" value="{{marca}}"/>
+        </div>
+    {{/each}}
+        <div class="row mb-1">
+            <button type="submit"  id="login" class="btn btn-login btn-block mb-4">Editar</button>
+        </div>  
+    </form>
+</div>  
